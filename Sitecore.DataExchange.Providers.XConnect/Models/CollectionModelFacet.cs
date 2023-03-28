@@ -1,0 +1,19 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: Sitecore.DataExchange.Providers.XConnect.Models.CollectionModelFacet
+// Assembly: Sitecore.DataExchange.Providers.XConnect, Version=7.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: 79449A24-60CA-40C6-A977-3401990E2F4B
+// Assembly location: C:\inetpub\wwwroot\xp102sc.dev.local\bin\Sitecore.DataExchange.Providers.XConnect.dll
+
+using System;
+
+namespace Sitecore.DataExchange.Providers.XConnect.Models
+{
+  public class CollectionModelFacet
+  {
+    public string FacetName { get; set; }
+
+    public Type FacetType { get; set; }
+
+    public Type EntityType { get; set; }
+  }
+}

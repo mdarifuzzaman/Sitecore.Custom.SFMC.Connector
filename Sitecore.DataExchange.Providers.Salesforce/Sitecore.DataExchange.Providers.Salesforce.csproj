@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\inetpub\wwwroot\xp102sc.dev.local\bin\Sitecore.DataExchange.Providers.Salesforce.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D1662188-A2CD-4E47-8E34-3AAB8A21576F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Sitecore.DataExchange.Providers.Salesforce</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Sitecore.DataExchange.Providers.Salesforce</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Salesforce.Common">
+      <HintPath>lib\Salesforce.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Salesforce.Force">
+      <HintPath>lib\Salesforce.Force.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.DataExchange, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\inetpub\wwwroot\xp102sc.dev.local\bin\Sitecore.DataExchange.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.DataExchange.DataAccess">
+      <HintPath>lib\Sitecore.DataExchange.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>lib\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Nexus.Consumption">
+      <HintPath>lib\Sitecore.Nexus.Consumption.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Services.Core">
+      <HintPath>lib\Sitecore.Services.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Converters\DataAccess\VaueReaders\LookupFieldValueReaderConverter.cs" />
+    <Compile Include="DataAccess\Readers\LookupFieldValueReader.cs" />
+    <Compile Include="Processor\BaseOverrideSteps\CopyObjectFromContextToNewLocationStepProcessor.cs" />
+    <Compile Include="Processor\PipelineSteps\SetUseDeltaSettingsPipelineStepConverter.cs" />
+    <Compile Include="Processor\PipelineSteps\SetUseDeltaSettingsPipelineStepProcessor.cs" />
+    <Compile Include="SalesforceDateTime.cs" />
+    <Compile Include="SalesforceDateTypeFormat.cs" />
+    <Compile Include="SalesforceDateType.cs" />
+    <Compile Include="Telemetry.cs" />
+    <Compile Include="Texts.cs" />
+    <Compile Include="SubmitObjects\SubmitObjectSettings.cs" />
+    <Compile Include="SubmitObjects\SubmitSingleObjectStepConverter.cs" />
+    <Compile Include="SubmitObjects\SubmitSingleObjectStepProcessor.cs" />
+    <Compile Include="ReferenceData\SalesforceMarketingCampaignCommonData.cs" />
+    <Compile Include="ReadObjects\IObjectReader.cs" />
+    <Compile Include="ReadObjects\ObjectReader.cs" />
+    <Compile Include="ReadObjects\ObjectReaderContext.cs" />
+    <Compile Include="ReadObjects\ObjectReaderContextConverter.cs" />
+    <Compile Include="ReadObjects\ReadObjectsByIdentifierStepConverter.cs" />
+    <Compile Include="ReadObjects\ReadObjectsByIdentifierStepProcessor.cs" />
+    <Compile Include="ReadObjects\ReadObjectsSettings.cs" />
+    <Compile Include="ReadObjects\ReadObjectsStepConverter.cs" />
+    <Compile Include="ReadObjects\ReadObjectsStepProcessor.cs" />
+    <Compile Include="ReadObjects\ResolveObjectStepConvertor.cs" />
+    <Compile Include="ReadObjects\ResolveObjectStepProcessor.cs" />
+    <Compile Include="Queues\AddObjectToQueueStepConvertor.cs" />
+    <Compile Include="Queues\AddObjectToQueueStepProcesor.cs" />
+    <Compile Include="Queues\BaseSubmitQueuePipelineProcessor.cs" />
+    <Compile Include="Queues\CreateObjectQueueStepConverter.cs" />
+    <Compile Include="Queues\CreateObjectQueueStepProcessor.cs" />
+    <Compile Include="Queues\ObjectQueuePlugin.cs" />
+    <Compile Include="Queues\SalesforceObjectQueue.cs" />
+    <Compile Include="Queues\ObjectQueueStepConvertor.cs" />
+    <Compile Include="Queues\QueueOperationSettings.cs" />
+    <Compile Include="Queues\ResultObject.cs" />
+    <Compile Include="Queues\SubmitRemainingObjectsFromQueueStepProcessor.cs" />
+    <Compile Include="Query\BaseConditionExpressionConverter.cs" />
+    <Compile Include="Query\BooleanConditionExpressionConverter.cs" />
+    <Compile Include="Query\ConditionExpressionDescriptor.cs" />
+    <Compile Include="Query\DateRangeConditionDescriptor.cs" />
+    <Compile Include="Query\DateRangeConditionExpressionConverter.cs" />
+    <Compile Include="Query\DateRangeConditionHelper.cs" />
+    <Compile Include="Query\FilterExpressionConverter.cs" />
+    <Compile Include="Query\FilterExpressionDescriptor.cs" />
+    <Compile Include="Query\IDateRangeConditionHelper.cs" />
+    <Compile Include="Query\IExpressionDescriptor`1.cs" />
+    <Compile Include="Query\InConditionExpressionConverter.cs" />
+    <Compile Include="Query\NullValueConditionExpressionConverter.cs" />
+    <Compile Include="Query\NumericConditionExpressionConverter.cs" />
+    <Compile Include="Query\RelativeDateConditionExpressionConverter.cs" />
+    <Compile Include="Query\StringConditionExpressionConverter.cs" />
+    <Compile Include="Plugins\BulkUpdateOperationSettings.cs" />
+    <Compile Include="Plugins\MemberObjectsSettings.cs" />
+    <Compile Include="Plugins\MultipleOperationsSettings.cs" />
+    <Compile Include="Plugins\ObjectHandlingSettings.cs" />
+    <Compile Include="Plugins\ObjectLocationSettings.cs" />
+    <Compile Include="Plugins\SalesforceClientSettings.cs" />
+    <Compile Include="Plugins\WriteObjectSettings.cs" />
+    <Compile Include="Endpoints\AuthenticationClientSettings.cs" />
+    <Compile Include="Endpoints\ProtectedDataHelper.cs" />
+    <Compile Include="Endpoints\SalesforceClientEndpointConverter.cs" />
+    <Compile Include="Endpoints\SalesforceClientEndpointTroubleshooter.cs" />
+    <Compile Include="DataAccess\Writers\ExpandoObjectPropertyValueWriter.cs" />
+    <Compile Include="DataAccess\Readers\DateValueReader.cs" />
+    <Compile Include="DataAccess\Readers\LookupFieldValuesReader.cs" />
+    <Compile Include="DataAccess\Readers\ObjectFieldValueReader.cs" />
+    <Compile Include="DataAccess\Readers\SCIDValueReader.cs" />
+    <Compile Include="DataAccess\ApplyMappingRules\TargetCollectionNonEmptyMappingRule.cs" />
+    <Compile Include="Converters\ExpandoSObjectConverter.cs" />
+    <Compile Include="Converters\DataAccess\VaueReaders\LookupFieldValuesReaderConverter.cs" />
+    <Compile Include="Converters\DataAccess\ValueAccessors\ObjectFieldValueAccessorConverter.cs" />
+    <Compile Include="Converters\DataAccess\ValueAccessors\ObjectValueAccessorSetConverter.cs" />
+    <Compile Include="Converters\DataAccess\ApplyMappingRules\TargetCollectionNonEmptyRuleConverter.cs" />
+    <Compile Include="ApiUsage\ApiUsageDetails.cs" />
+    <Compile Include="ApiUsage\ApiUsageReader.cs" />
+    <Compile Include="ApiUsage\IApiUsageReader.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

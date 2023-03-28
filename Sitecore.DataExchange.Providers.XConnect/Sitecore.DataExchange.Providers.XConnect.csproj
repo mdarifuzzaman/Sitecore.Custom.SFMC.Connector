@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\inetpub\wwwroot\xp102sc.dev.local\bin\Sitecore.DataExchange.Providers.XConnect.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{873AF6E2-4B35-4F10-A012-6A3749777421}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Sitecore.DataExchange.Providers.XConnect</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>7.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Sitecore.DataExchange.Providers.XConnect</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>lib\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+      <HintPath>..\..\..\..\inetpub\wwwroot\xp102sc.dev.local\bin\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging">
+      <HintPath>lib\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+      <HintPath>lib\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Async.Extensions.Legacy">
+      <HintPath>lib\Sitecore.Async.Extensions.Legacy.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.DataExchange, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\inetpub\wwwroot\xp102sc.dev.local\bin\Sitecore.DataExchange.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.DataExchange.DataAccess">
+      <HintPath>lib\Sitecore.DataExchange.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Framework.Conditions">
+      <HintPath>lib\Sitecore.Framework.Conditions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Services.Core">
+      <HintPath>lib\Sitecore.Services.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XConnect">
+      <HintPath>lib\Sitecore.XConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XConnect.Client">
+      <HintPath>lib\Sitecore.XConnect.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XConnect.Collection.Model">
+      <HintPath>lib\Sitecore.XConnect.Collection.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.XConnect.Core">
+      <HintPath>lib\Sitecore.XConnect.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Xdb.Common.Web">
+      <HintPath>lib\Sitecore.Xdb.Common.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Xdb.ReferenceData.Client">
+      <HintPath>lib\Sitecore.Xdb.ReferenceData.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Xdb.ReferenceData.Core">
+      <HintPath>lib\Sitecore.Xdb.ReferenceData.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Linq.Async.Queryable">
+      <HintPath>lib\System.Linq.Async.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DefaultXConnectClientHelper.cs" />
+    <Compile Include="DefaultXConnectClientHelperFactory.cs" />
+    <Compile Include="IXConnectClientHelper.cs" />
+    <Compile Include="IXConnectClientHelperFactory.cs" />
+    <Compile Include="Texts.cs" />
+    <Compile Include="XConnectClientException.cs" />
+    <Compile Include="XObjectMapping\AlwaysTrueCondition.cs" />
+    <Compile Include="XObjectMapping\AlwaysTrueConditionConverter.cs" />
+    <Compile Include="XObjectMapping\BaseXObjectMappingCondition.cs" />
+    <Compile Include="XObjectMapping\BaseXObjectMappingConditionConverter.cs" />
+    <Compile Include="XObjectMapping\IXObjectMappingCondition.cs" />
+    <Compile Include="XObjectMapping\IXObjectMappingConditionSet.cs" />
+    <Compile Include="XObjectMapping\SequentialXObjectMappingConditionSet.cs" />
+    <Compile Include="XObjectMapping\ValueMatchesConstantCondition.cs" />
+    <Compile Include="XObjectMapping\ValueMatchesConstantConditionConverter.cs" />
+    <Compile Include="XObjectMapping\XObjectMappingDefinition.cs" />
+    <Compile Include="XObjectMapping\XObjectMappingDefinitionConverter.cs" />
+    <Compile Include="XObjectMapping\XObjectMappingDefinitionGroup.cs" />
+    <Compile Include="XObjectMapping\XObjectMappingDefinitionGroupConverter.cs" />
+    <Compile Include="Troubleshooters\TestXConnectClientEndpointConnection.cs" />
+    <Compile Include="Troubleshooters\TestXdbReferenceDataClientEndpointConnection.cs" />
+    <Compile Include="Serialization\ContactIdentifiersConverter.cs" />
+    <Compile Include="Serialization\EntityModelContractResolver.cs" />
+    <Compile Include="Serialization\EntityModelContractResolverConverter.cs" />
+    <Compile Include="ReferenceData\AddXdbReferenceDataClientToContextStepConverter.cs" />
+    <Compile Include="ReferenceData\AddXdbReferenceDataClientToContextStepProcessor.cs" />
+    <Compile Include="ReferenceData\AddXdbReferenceDataDefinitionToBatchStepConverter.cs" />
+    <Compile Include="ReferenceData\AddXdbReferenceDataDefinitionToBatchStepProcessor.cs" />
+    <Compile Include="ReferenceData\BaseSubmitXdbReferenceDataBatchStepProcessor.cs" />
+    <Compile Include="ReferenceData\ReferenceDataClientEndpointConverter.cs" />
+    <Compile Include="ReferenceData\ReferenceDataClientEndpointSettings.cs" />
+    <Compile Include="ReferenceData\ReferenceDataClientPlugin.cs" />
+    <Compile Include="ReferenceData\ReferenceDataDefinitionSettings.cs" />
+    <Compile Include="ReferenceData\ReferenceDataHelper.cs" />
+    <Compile Include="ReferenceData\ReferenceDataHelperContext.cs" />
+    <Compile Include="ReferenceData\ReferenceDataSettings.cs" />
+    <Compile Include="ReferenceData\ResolveXdbReferenceDataDefinitionStepConverter.cs" />
+    <Compile Include="ReferenceData\ResolveXdbReferenceDataDefinitionStepProcessor.cs" />
+    <Compile Include="ReferenceData\SubmitXdbReferenceDataBatchStepConverter.cs" />
+    <Compile Include="ReferenceData\SubmitXdbReferenceDataBatchStepProcessor.cs" />
+    <Compile Include="Processors\PipelineSteps\AddEntityToXConnectBatchStepProcessor.cs" />
+    <Compile Include="Processors\PipelineSteps\AddXConnectClientToContextStepProcessor.cs" />
+    <Compile Include="Processors\PipelineSteps\BaseResolveEntityFromXConnectContactStepProcessor`2.cs" />
+    <Compile Include="Processors\PipelineSteps\BaseResolveEntityFromXConnectStepProcessor.cs" />
+    <Compile Include="Processors\PipelineSteps\BaseSubmitEntityToXConnectStepProcessor`2.cs" />
+    <Compile Include="Processors\PipelineSteps\BaseSubmitXConnectBatchStepProcessor.cs" />
+    <Compile Include="Processors\PipelineSteps\ReadInteractionsFromContactStepProcessor.cs" />
+    <Compile Include="Processors\PipelineSteps\ReadInteracttionsFromContactStepConverter.cs" />
+    <Compile Include="Processors\PipelineSteps\ReadMessageItemFromEmailSentEventProcessor.cs" />
+    <Compile Include="Processors\PipelineSteps\ReadXConnectContactsStepProcessor.cs" />
+    <Compile Include="Processors\PipelineSteps\ResolveInteractionFromXConnectContactStepProcessor.cs" />
+    <Compile Include="Processors\PipelineSteps\ResolveXConnectContactByIdentifierStepProcessor.cs" />
+    <Compile Include="Processors\PipelineSteps\ResolveXConnectEntityByIdStepProcessor.cs" />
+    <Compile Include="Processors\PipelineSteps\SubmitContactToXConnectStepProcessor.cs" />
+    <Compile Include="Processors\PipelineSteps\SubmitCurrentXConnectBatchStepProcessor.cs" />
+    <Compile Include="Processors\PipelineSteps\SubmitInteractionToXConnectStepProcessor.cs" />
+    <Compile Include="Processors\PipelineSteps\SubmitSingleXConnectEntityProcessor.cs" />
+    <Compile Include="Processors\PipelineSteps\SubmitXConnectBatchStepProcessor.cs" />
+    <Compile Include="Plugins\BaseXpfClientPlugin`1.cs" />
+    <Compile Include="Plugins\EntityExpressionBuilderSettings.cs" />
+    <Compile Include="Plugins\EntityFacetSettings.cs" />
+    <Compile Include="Plugins\ExceptionHandlingSettings.cs" />
+    <Compile Include="Plugins\LoadInteractionsSettings.cs" />
+    <Compile Include="Plugins\MappingEventSettings.cs" />
+    <Compile Include="Plugins\ReadEntitySettings.cs" />
+    <Compile Include="Plugins\ResolveEntitySettings.cs" />
+    <Compile Include="Plugins\XConnectClientPlugin.cs" />
+    <Compile Include="Plugins\XConnectContactIdentifierSettings.cs" />
+    <Compile Include="Plugins\XConnectEntitySettings.cs" />
+    <Compile Include="Plugins\XConnectVerificationLogCollections.cs" />
+    <Compile Include="Plugins\XdbOperationResultSettings.cs" />
+    <Compile Include="PipelineBatchVerification\AddXConnectClientToContextVerificationStepProcesso.cs" />
+    <Compile Include="PipelineBatchVerification\DummyEntityLookupResult`1.cs" />
+    <Compile Include="PipelineBatchVerification\DummyEntityReference`1.cs" />
+    <Compile Include="PipelineBatchVerification\DummyXConnectClient.cs" />
+    <Compile Include="PipelineBatchVerification\DummyXConnectClientConverter.cs" />
+    <Compile Include="PipelineBatchVerification\ResolveXConnectContactByIdentifierVerificationStep.cs" />
+    <Compile Include="PipelineBatchVerification\ResolveXConnectEntityByIdVerificationStepProcessor.cs" />
+    <Compile Include="Models\CollectionModelFacet.cs" />
+    <Compile Include="Models\ContactModel.cs" />
+    <Compile Include="Models\DeviceProfileModel.cs" />
+    <Compile Include="Models\EntityModel.cs" />
+    <Compile Include="Models\InteractionModel.cs" />
+    <Compile Include="Models\ReadOnlyEntityModel`1.cs" />
+    <Compile Include="MappingsAppliedActions\RemoveFacetsAction.cs" />
+    <Compile Include="MappingsAppliedActions\RemoveFacetsActionConverter.cs" />
+    <Compile Include="MappingsAppliedActionRules\HasFacetsRule.cs" />
+    <Compile Include="MappingsAppliedActionRules\HasFacetsRuleConverter.cs" />
+    <Compile Include="Hashing\HashedObjectSerializerContractResolver.cs" />
+    <Compile Include="Hashing\XConnectHashGeneratorConverter.cs" />
+    <Compile Include="Extensions\ContactModelExtensions.cs" />
+    <Compile Include="Extensions\EntityModelExtensions.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="Expressions\BaseContactIdentifierExpressionBuilder`1.cs" />
+    <Compile Include="Expressions\BaseFacetPropertyValueBuilder.cs" />
+    <Compile Include="Expressions\BaseFacetPropertyValueExpressionConverter.cs" />
+    <Compile Include="Expressions\ContactIdentifierSourceValueExpressionBuilder.cs" />
+    <Compile Include="Expressions\ContactIdentifierSourceValueExpressionConverter.cs" />
+    <Compile Include="Expressions\ContactIdentifierTypeValueExpressionBuilder.cs" />
+    <Compile Include="Expressions\ContactIdentifierTypeValueExpressionConverter.cs" />
+    <Compile Include="Expressions\ContactIdentifierValueExpressionBuilder.cs" />
+    <Compile Include="Expressions\ContactIdentifierValueExpressionConverter.cs" />
+    <Compile Include="Expressions\EntityFacetPropertySettings.cs" />
+    <Compile Include="Expressions\EntityFacetPropertyValueExpressionBuilder.cs" />
+    <Compile Include="Expressions\EventTypeExpressionBuilder.cs" />
+    <Compile Include="Expressions\EventTypeExpressionConverter.cs" />
+    <Compile Include="Expressions\ExpressionContext.cs" />
+    <Compile Include="Expressions\ExpressionTypeConverter.cs" />
+    <Compile Include="Expressions\FacetPropertyStringValueExpressionBuilder.cs" />
+    <Compile Include="Expressions\FacetPropertyStringValueExpressionConverter.cs" />
+    <Compile Include="Expressions\FilterExpressionBuilder.cs" />
+    <Compile Include="Expressions\FilterExpressionConverter.cs" />
+    <Compile Include="Expressions\IEntityExpressionBuilder.cs" />
+    <Compile Include="Expressions\IEventExpressionBuilder.cs" />
+    <Compile Include="Expressions\LogicalExpressionBuilder.cs" />
+    <Compile Include="DataAccess\Writers\AddToFacetPropertyListValueWriter.cs" />
+    <Compile Include="DataAccess\Writers\ContactIdentifierByConstructorValueWriter.cs" />
+    <Compile Include="DataAccess\Writers\ContactIdentifierValueWriter.cs" />
+    <Compile Include="DataAccess\Writers\EntityIdValueWriter.cs" />
+    <Compile Include="DataAccess\Writers\FacetDictionaryPropertyValueWriter.cs" />
+    <Compile Include="DataAccess\Writers\FacetListPropertyValueWriter.cs" />
+    <Compile Include="DataAccess\Writers\FacetMapValueWriter.cs" />
+    <Compile Include="DataAccess\Writers\FacetPropertyValueWriter.cs" />
+    <Compile Include="DataAccess\Writers\FacetPropertyWithMappingValueWriter.cs" />
+    <Compile Include="DataAccess\Writers\FacetValueWriter.cs" />
+    <Compile Include="DataAccess\Writers\InteractionEventsValueWriter.cs" />
+    <Compile Include="DataAccess\Writers\InteractionEventValueWriter.cs" />
+    <Compile Include="DataAccess\Writers\RemoveFromFacetPropertyListValueWriter.cs" />
+    <Compile Include="DataAccess\Writers\XObjectFacetPropertyValueWriter.cs" />
+    <Compile Include="DataAccess\Writers\XObjectListPropertyValueWriter.cs" />
+    <Compile Include="DataAccess\Writers\XObjectPropertyValueWriter.cs" />
+    <Compile Include="DataAccess\Readers\ContactIdentifierValueReader.cs" />
+    <Compile Include="DataAccess\Readers\EntityIdValueReader.cs" />
+    <Compile Include="DataAccess\Readers\EventsFromInteractionValueReader.cs" />
+    <Compile Include="DataAccess\Readers\FacetPropertyValueReader.cs" />
+    <Compile Include="DataAccess\Readers\FacetValueReader.cs" />
+    <Compile Include="DataAccess\Readers\IdentifiedContactReferenceValueReader.cs" />
+    <Compile Include="DataAccess\Readers\InteractionEventCollectionValueReader.cs" />
+    <Compile Include="DataAccess\Readers\IntToContactIdentifierTypeValueReader.cs" />
+    <Compile Include="DataAccess\Readers\PageViewEventDefinitionIdValueReader.cs" />
+    <Compile Include="Converters\PipelineSteps\AddEntityToXConnectBatchStepConverter.cs" />
+    <Compile Include="Converters\PipelineSteps\AddXConnectClientToContextStepConverter.cs" />
+    <Compile Include="Converters\PipelineSteps\BaseResolveEntityFromXConnectStepConverter.cs" />
+    <Compile Include="Converters\PipelineSteps\ReadContactsFromXConnectStepConverter.cs" />
+    <Compile Include="Converters\PipelineSteps\ReadInteractionsFromContactStepConverter.cs" />
+    <Compile Include="Converters\PipelineSteps\ResolveInteractionFromXConnectContactStepConverter.cs" />
+    <Compile Include="Converters\PipelineSteps\ResolveXConnectContactByIdentifierStepConverter.cs" />
+    <Compile Include="Converters\PipelineSteps\ResolveXConnectEntityByIdStepConverter.cs" />
+    <Compile Include="Converters\PipelineSteps\SubmitContactToXConnectConverter.cs" />
+    <Compile Include="Converters\PipelineSteps\SubmitInteractionToXConnectConverter.cs" />
+    <Compile Include="Converters\PipelineSteps\SubmitSingleXConnectEntityConverter.cs" />
+    <Compile Include="Converters\PipelineSteps\SubmitXConnectBatchConverter.cs" />
+    <Compile Include="Converters\Models\ContactConverter.cs" />
+    <Compile Include="Converters\Models\ContactModelConverter.cs" />
+    <Compile Include="Converters\Models\DeviceProfileConverter.cs" />
+    <Compile Include="Converters\Models\DeviceProfileModelConverter.cs" />
+    <Compile Include="Converters\Models\InteractionConverter.cs" />
+    <Compile Include="Converters\Models\InteractionModelConverter.cs" />
+    <Compile Include="Converters\FilterExpressions\EntityFacetPropertyValueExpressionConverter.cs" />
+    <Compile Include="Converters\DataAccess\AddToEntityFacetPropertyValueAccessorConverter.cs" />
+    <Compile Include="Converters\DataAccess\ContactIdentifierValueAccessorConverter.cs" />
+    <Compile Include="Converters\DataAccess\EntityFacetDictionaryPropertyValueAccessorConverte.cs" />
+    <Compile Include="Converters\DataAccess\EntityFacetListPropertyValueAccessorConverter.cs" />
+    <Compile Include="Converters\DataAccess\EntityFacetPropertyValueAccessorConverter.cs" />
+    <Compile Include="Converters\DataAccess\EntityFacetPropertyWithMappingValueAccessorConvert.cs" />
+    <Compile Include="Converters\DataAccess\EntityFacetValueAccessorConverter.cs" />
+    <Compile Include="Converters\DataAccess\EntityFacetXObjectPropertyValueAccessorConverter.cs" />
+    <Compile Include="Converters\DataAccess\EntityIdValueAccessorConverter.cs" />
+    <Compile Include="Converters\DataAccess\EventsFromInteractionValueAccessorConverter.cs" />
+    <Compile Include="Converters\DataAccess\InteractionEventsValueAccessorConverter.cs" />
+    <Compile Include="Converters\DataAccess\InteractionEventValueAccessorConverter.cs" />
+    <Compile Include="Converters\DataAccess\ParameterPositionValueAccessorConverter.cs" />
+    <Compile Include="Converters\DataAccess\RemoveFromEntityFacetPropertyValueAccessorConverte.cs" />
+    <Compile Include="Converters\DataAccess\UniqueSourceContactIdentifierValueAccessorConverte.cs" />
+    <Compile Include="Converters\DataAccess\XClrObjectPropertyValueAccessorConverter.cs" />
+    <Compile Include="Converters\DataAccess\XdbReferenceDataDefinitionPropertyValueAccessorCon.cs" />
+    <Compile Include="Converters\DataAccess\XObjectListPropertyValueAccessorConverter.cs" />
+    <Compile Include="Converters\DataAccess\XObjectPropertyValueAccessorConverter.cs" />
+    <Compile Include="Converters\DataAccess\Readers\IdentifiedContactReferenceValueReaderConverter.cs" />
+    <Compile Include="Converters\DataAccess\Readers\IntToContactIdentifierValueReaderConverter.cs" />
+    <Compile Include="Converters\DataAccess\Readers\PageViewEventDefinitionIdValueReaderConverter.cs" />
+    <Compile Include="Converters\DataAccess\Readers\UniqueSourceContactIdentifierValueReaderConverter.cs" />
+    <Compile Include="Converters\CollectionModels\BaseCollectionModelConverter.cs" />
+    <Compile Include="Converters\CollectionModels\BaseXdbFacetDefinitionConverter.cs" />
+    <Compile Include="Converters\CollectionModels\CompiledCollectionModelConverter.cs" />
+    <Compile Include="Converters\CollectionModels\ConfiguredCollectionModelConverter.cs" />
+    <Compile Include="Converters\CollectionModels\DeclaredXdbFacetDefinitionConverter.cs" />
+    <Compile Include="Converters\CollectionModels\ReferencedXdbFacetDefinitionConverter.cs" />
+    <Compile Include="Client\BaseXConnectServiceClientConverter`1.cs" />
+    <Compile Include="Client\CredentialsWebRequestHandlerModifierOptions.cs" />
+    <Compile Include="Client\NetworkCredentialsWebRequestHandlerModifier.cs" />
+    <Compile Include="Client\XConnectClientConverter.cs" />
+    <Compile Include="Client\XConnectClientEndpointConverter.cs" />
+    <Compile Include="Client\XConnectClientEndpointSettings.cs" />
+    <Compile Include="Client\XConnectClientSettings.cs" />
+    <Compile Include="Client\XConnectConnectionStringTypes.cs" />
+    <Compile Include="Client\XConnectServiceTypes.cs" />
+    <Compile Include="Client\XdbModelResolverConverter.cs" />
+    <Compile Include="BatchHandling\InteractionEventCountRule.cs" />
+    <Compile Include="BatchHandling\InteractionEventCountRuleConverter.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.DataExchange.Providers.Salesforce", "Sitecore.DataExchange.Providers.Salesforce.csproj", "{D1662188-A2CD-4E47-8E34-3AAB8A21576F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.DataExchange.Providers.XConnect", "..\Sitecore.DataExchange.Providers.XConnect\Sitecore.DataExchange.Providers.XConnect.csproj", "{873AF6E2-4B35-4F10-A012-6A3749777421}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1662188-A2CD-4E47-8E34-3AAB8A21576F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1662188-A2CD-4E47-8E34-3AAB8A21576F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1662188-A2CD-4E47-8E34-3AAB8A21576F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1662188-A2CD-4E47-8E34-3AAB8A21576F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{873AF6E2-4B35-4F10-A012-6A3749777421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{873AF6E2-4B35-4F10-A012-6A3749777421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{873AF6E2-4B35-4F10-A012-6A3749777421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{873AF6E2-4B35-4F10-A012-6A3749777421}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CA51503-DBB4-46C4-89F1-7BD7386DF03A}
+	EndGlobalSection
+EndGlobal
