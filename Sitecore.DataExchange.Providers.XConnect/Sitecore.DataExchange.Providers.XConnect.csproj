@@ -93,6 +93,7 @@
     <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converters\DataAccess\Readers\GuidToDescriptionValueReaderConverter.cs" />
     <Compile Include="DefaultXConnectClientHelper.cs" />
     <Compile Include="DefaultXConnectClientHelperFactory.cs" />
     <Compile Include="IXConnectClientHelper.cs" />

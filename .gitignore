@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Sitecore.DataExchange.Providers.XConnect/bin/Debug
+/Sitecore.DataExchange.Providers.XConnect/obj/Debug
